@@ -19,7 +19,7 @@
 
     <main>
         <section id="item-section" class="container pt-md-5 pt-lg-5">
-            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
+            <div class="row gx-5 row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
 
                 <!-- Item Image -->
                 <div class="col py-md-3 py-lg-3">
@@ -29,8 +29,8 @@
                 <!-- Item Details -->
                 <div class="col">
                     <div class="item-details mb-5">
-                        <h1>Customize your Blue 24-inch iMac with Apple M1 chip</h1>
-                        <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 effeviency cores, 7-core GPU, and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt/USB 4 ports Magic Mouse keyboard. US English</p>
+                        <h1>Customize your Blue 24-inch <br> iMac with Apple M1 chip.</h1>
+                        <p class="text-muted ">Apple M1 chip with 8-core CPU with 4 performance cores and 4 effeviency cores, 7-core GPU, and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt/USB 4 ports Magic Mouse keyboard-US English</p>
                     </div>
 
                     <div class="add-ons mb-5">
@@ -59,58 +59,53 @@
                             <div class="price-details fw-bold mb-4">
                                 <table class="table caption-top">
                                     <tbody>
-                                        <tr>
+                                        <tr class="fs-5">
                                             <td>Best Price</td>
                                             <td>$<span id="best-price">1299</span> </td>
                                         </tr>
-                                        <tr>
+                                        <tr class="fs-5">
                                             <td>Extra Memory Cost</td>
                                             <td>$<span id="memory-cost">0</span> </td>
                                         </tr>
-                                        <tr>
+                                        <tr class="fs-5">
                                             <td>Extra Storage Cost</td>
                                             <td>$<span id="storage-cost">0</span> </td>
                                         </tr>
-                                        <tr>
+                                        <tr class="fs-5">
                                             <td>Delivery charge</td>
                                             <td>$<span id="delivery-cost">0</span> </td>
                                         </tr>
                                     </tbody>
                                     <tfoot>
-                                        <tr>
+                                        <tr class="fs-5">
                                             <td>Total Price</td>
                                             <td>$<span id="total-price">1299</span> </td>
                                         </tr>
                                     </tfoot>
                                 </table>
                             </div>
-                            <div class="d-flex w-75" id="promo-section">
-                                <input id="promo-field" class="form-control me-2" type="text" placeholder="promo code" aria-label="text">
-                                <button id="promo-btn" type="button" class="btn btn-danger">Danger</button>
-                            </div>
-                            <!-- <div id="promo-section" class="promo">
+                            <div id="promo-section">
                                 <h5>Add Promo code</h5>
-                                <input  class="py-1 px-3" type="text">
-                                <button  class="btn btn-danger">Apply</button>
-                            </div> -->
+                                <input id="promo-field" class="py-1 px-3" type="text" placeholder="stevekaku">
+                                <button id="promo-btn" class="btn btn-danger">Apply</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <hr>
-        <section>
-            <div class="d-flex justify-content-center mt-2 mb-3 ">
-                <h1 class="fw-bolder text-center">Total Price: </h1>
-                <h1 class="fw-bolder ms-4">$<span id="total-final-price">1299</span></h1>
-            </div>
-        </section>
     </main>
+    <footer>
+
+        <!-- Item Final Total Price -->
+        <h1 class="text-center fw-bold mb-4">Total: $<span id="total-final-price">1299</span></h1>
+    </footer>
     <!-- javascript link -->
     <script src="js/macbook.js"></script>
 
 
-    <!-- bootstrap script link -->
+    <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js " integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj " crossorigin="anonymous "></script>
 
 </body>

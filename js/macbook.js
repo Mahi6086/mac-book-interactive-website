@@ -14,7 +14,7 @@ function totalPrice() {
     const preTotalPrice = document.getElementById('total-price');
     const totalPrice = 1299 + parseInt(memoryCost.innerText) + parseInt(storageCost.innerText) + parseInt(deliveryCost.innerText);
     preTotalPrice.innerText = totalPrice;
-    const totalPriceFinal = document.getElementById('total-price-final');
+    const totalPriceFinal = document.getElementById('total-final-price');
     totalPriceFinal.innerText = totalPrice;
 }
 
@@ -34,12 +34,12 @@ btnClicked('storage-3', 'storage-cost', 180);
 btnClicked('delivery-1', 'delivery-cost', 0);
 btnClicked('delivery-2', 'delivery-cost', 20);
 
-//function total-final-price- & total-price & promo code 
+//Total-final-price Function 
 function finalPricePromo() {
     const promoField = document.getElementById('promo-field');
     const priceFinal = document.getElementById('total-final-price');
     const totalPrice = document.getElementById('total-price');
-    const discount = parseInt(totalPrice.innerHTML) / 100 * 20;
+    const discount = parseInt(totalPrice.innerText) / 100 * 20;
     if (promoField.value == 'stevekaku') {
         const totalPriceFinalPromo = parseInt(totalPrice.innerText) - discount;
         priceFinal.innerText = totalPriceFinalPromo;
@@ -50,8 +50,6 @@ function finalPricePromo() {
     }
     promoField.value = '';
 };
-
-
 
 // Promo Code Apply
 document.getElementById('promo-btn').addEventListener('click', function() {
