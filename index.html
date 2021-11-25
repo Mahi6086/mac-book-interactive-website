@@ -1,111 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mac Book Pro</title>
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
 
     <!-- External CSS File -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <main>
-        <section id="item-section" class="container pt-md-5 pt-lg-5">
-            <div class="row gx-5 row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
+      <section id="item-section" class="container pt-md-5 pt-lg-5">
+        <div
+          class="row gx-5 row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2"
+        >
+          <!-- Item Image -->
+          <div class="col py-md-3 py-lg-3">
+            <img class="img-fluid" src="images/mac.png" alt="Mac Book Pro" />
+          </div>
 
-                <!-- Item Image -->
-                <div class="col py-md-3 py-lg-3">
-                    <img class="img-fluid" src="images/mac.png" alt="Mac Book Pro">
-                </div>
-
-                <!-- Item Details -->
-                <div class="col">
-                    <div class="item-details mb-5">
-                        <h1>Customize your Blue 24-inch <br> iMac with Apple M1 chip.</h1>
-                        <p class="text-muted ">Apple M1 chip with 8-core CPU with 4 performance cores and 4 effeviency cores, 7-core GPU, and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt/USB 4 ports Magic Mouse keyboard-US English</p>
-                    </div>
-
-                    <div class="add-ons mb-5">
-                        <div class="memory mb-4">
-                            <h5 class="fw-bold">Memory</h5>
-                            <button id="memory-1" class="btn btn-outline-dark">8GB unified memory</button>
-                            <button id="memory-2" class="btn btn-outline-dark">16GB unified memory</button>
-                        </div>
-
-                        <div class="storage mb-4">
-                            <h5 class="fw-bold">Storage</h5>
-                            <button id="storage-1" class="btn btn-outline-dark">256GB SSD storage</button>
-                            <button id="storage-2" class="btn btn-outline-dark">512GB SSD storage</button>
-                            <button id="storage-3" class="btn btn-outline-dark">1TB SSD storage</button>
-                        </div>
-
-                        <div class="delivery mb-4">
-                            <h5 class="fw-bold">Choose your delivery option</h5>
-                            <button id="delivery-1" class="btn btn-outline-dark">Friday, Aug 25 FREE Prime Delivery</button>
-                            <button id="delivery-2" class="btn btn-outline-dark">Friday, Aug 21 Delivery charge $20</button>
-                        </div>
-                    </div>
-
-                    <div class="price-section mb-5 row">
-                        <div class="col-8">
-                            <div class="price-details fw-bold mb-4">
-                                <table class="table caption-top">
-                                    <tbody>
-                                        <tr class="fs-5">
-                                            <td>Best Price</td>
-                                            <td>$<span id="best-price">1299</span> </td>
-                                        </tr>
-                                        <tr class="fs-5">
-                                            <td>Extra Memory Cost</td>
-                                            <td>$<span id="memory-cost">0</span> </td>
-                                        </tr>
-                                        <tr class="fs-5">
-                                            <td>Extra Storage Cost</td>
-                                            <td>$<span id="storage-cost">0</span> </td>
-                                        </tr>
-                                        <tr class="fs-5">
-                                            <td>Delivery charge</td>
-                                            <td>$<span id="delivery-cost">0</span> </td>
-                                        </tr>
-                                    </tbody>
-                                    <tfoot>
-                                        <tr class="fs-5">
-                                            <td>Total Price</td>
-                                            <td>$<span id="total-price">1299</span> </td>
-                                        </tr>
-                                    </tfoot>
-                                </table>
-                            </div>
-                            <div id="promo-section">
-                                <h5>Add Promo code</h5>
-                                <input id="promo-field" class="py-1 px-3" type="text" placeholder="stevekaku">
-                                <button id="promo-btn" class="btn btn-danger">Apply</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <!-- Item Details -->
+          <div class="col">
+            <div class="item-details mb-5">
+              <h1>
+                Customize your Blue 24-inch <br />
+                iMac with Apple M1 chip.
+              </h1>
+              <p class="text-muted">
+                Apple, M1 chip with 8-core CPU with 4 performance cores and 4
+                effeviency cores, 7-core GPU, and 16-core Neural Engine 8GB
+                unified memory 256GB SSD storage Two Thunderbolt/USB 4 ports
+                Magic Mouse keyboard-US English
+              </p>
             </div>
-        </section>
-        <hr>
+
+            <div class="add-ons mb-5">
+              <div class="memory mb-4">
+                <h5 class="fw-bold">Memory</h5>
+                <button id="memory-1" class="btn btn-outline-dark">
+                  8GB unified memory
+                </button>
+                <button id="memory-2" class="btn btn-outline-dark">
+                  16GB unified memory
+                </button>
+              </div>
+
+              <div class="storage mb-4">
+                <h5 class="fw-bold">Storage</h5>
+                <button id="storage-1" class="btn btn-outline-dark">
+                  256GB SSD storage
+                </button>
+                <button id="storage-2" class="btn btn-outline-dark">
+                  512GB SSD storage
+                </button>
+                <button id="storage-3" class="btn btn-outline-dark">
+                  1TB SSD storage
+                </button>
+              </div>
+
+              <div class="delivery mb-4">
+                <h5 class="fw-bold">Choose your delivery option</h5>
+                <button id="delivery-1" class="btn btn-outline-dark">
+                  Friday, Aug 25 FREE Prime Delivery
+                </button>
+                <button id="delivery-2" class="btn btn-outline-dark">
+                  Friday, Aug 21 Delivery charge $20
+                </button>
+              </div>
+            </div>
+
+            <div class="price-section mb-5 row">
+              <div class="col-8">
+                <div class="price-details fw-bold mb-4">
+                  <table class="table caption-top">
+                    <tbody>
+                      <tr class="fs-5">
+                        <td>Best Price</td>
+                        <td>$<span id="best-price">1299</span></td>
+                      </tr>
+                      <tr class="fs-5">
+                        <td>Extra Memory Cost</td>
+                        <td>$<span id="memory-cost">0</span></td>
+                      </tr>
+                      <tr class="fs-5">
+                        <td>Extra Storage Cost</td>
+                        <td>$<span id="storage-cost">0</span></td>
+                      </tr>
+                      <tr class="fs-5">
+                        <td>Delivery charge</td>
+                        <td>$<span id="delivery-cost">0</span></td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr class="fs-5">
+                        <td>Total Price</td>
+                        <td>$<span id="total-price">1299</span></td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div>
+                <div id="promo-section">
+                  <h5>Add Promo code</h5>
+                  <input
+                    id="promo-field"
+                    class="py-1 px-3"
+                    type="text"
+                    placeholder="stevekaku"
+                  />
+                  <button id="promo-btn" class="btn btn-danger">Apply</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
     </main>
     <footer>
-
-        <!-- Item Final Total Price -->
-        <h1 class="text-center fw-bold mb-4">Total: $<span id="total-final-price">1299</span></h1>
+      <!-- Item Final Total Price -->
+      <h1 class="text-center fw-bold mb-4">
+        Total: $<span id="total-final-price">1299</span>
+      </h1>
     </footer>
     <!-- javascript link -->
     <script src="js/macbook.js"></script>
 
-
     <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js " integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj " crossorigin="anonymous "></script>
-
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js "
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj "
+      crossorigin="anonymous "
+    ></script>
+  </body>
+</html>
